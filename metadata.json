@@ -1,0 +1,6 @@
+{
+  "name": "Chronos Flow",
+  "description": "Minimalist Google Calendar daily task list with smart reminder alarms, streak tracker, and productivity analytics.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

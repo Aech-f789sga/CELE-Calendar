@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@keyframes flameWobble {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  20% {
+    transform: scale(1.05, 0.95) rotate(-3deg);
+  }
+  40% {
+    transform: scale(0.96, 1.06) rotate(2deg);
+  }
+  60% {
+    transform: scale(1.04, 0.97) rotate(-2deg);
+  }
+  80% {
+    transform: scale(0.98, 1.03) rotate(1deg);
+  }
+}
+
+@keyframes flameInnerDance {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1, 0.9) translateY(-3px);
+  }
+}
+
+@keyframes emberDrift1 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.8);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80px) translateX(-20px) scale(0.2);
+    opacity: 0;
+  }
+}
+
+@keyframes emberDrift2 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.6);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-95px) translateX(25px) scale(0.2);
+    opacity: 0;
+  }
+}
+
+@keyframes emberDrift3 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.9);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110px) translateX(10px) scale(0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes auraPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.65;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-flame-wobble {
+  animation: flameWobble 2.4s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-flame-inner {
+  animation: flameInnerDance 1.6s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-aura-pulse {
+  animation: auraPulse 2.8s ease-in-out infinite;
+}
+
+.animate-pop-in {
+  animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-ember-1 {
+  animation: emberDrift1 2.2s ease-out infinite;
+}
+
+.animate-ember-2 {
+  animation: emberDrift2 2.7s ease-out infinite 0.6s;
+}
+
+.animate-ember-3 {
+  animation: emberDrift3 2.5s ease-out infinite 1.2s;
+}

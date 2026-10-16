@@ -1,0 +1,6 @@
+{
+  "summary": "Comprehensive implementation plan for deploying Chronos Flow to Vercel via GitHub and enabling seamless Android PWA installation with silent background auto-updates. Covers service worker auto-update registration, vercel.json cache header configuration, an in-app Deploy & Android Install Guide modal with QR code generation, and step-by-step instructions for continuous deployment.",
+  "updatedAt": "2026-10-16T14:05:56.606593915Z",
+  "requestFeedback": true,
+  "userFacing": true
+}
